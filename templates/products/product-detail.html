@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block title %}{{ product.title }}{% endblock %}
+
+{% block content %}
+<div class="row">
+    <div class="col-md-6">
+        <img src="{{ product.image.url }}" class="img-fluid" alt="Mahsulot Rasmi">
+    </div>
+    <div class="col-md-6">
+        <h1>{{ product.title }}</h1>
+        <p class="lead">Narxi: {{ product.price }} so'm</p>
+        <p>{{ product.long_content }}</p>
+        <button class="btn btn-primary">Savatga qo'shish</button>
+    </div>
+</div>
+{% endblock %}
